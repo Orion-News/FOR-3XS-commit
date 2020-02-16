@@ -4,6 +4,8 @@ const Users = mongoose.model('Users');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
+const AuthConfig = require('../config/auth');
+
 class SessionController {
 	// verifica condições, Email e senha cadastrado? redirecionar usuario;
 	async LoginUser(req, res) {
@@ -22,6 +24,10 @@ class SessionController {
 			throw Error('Berrou na Senha');
 			return res.status(400).redirect(`/Error/?erro=${Error}`);
 		}
+		
+		const token = jwt.sign({ id : result._id}, AuthConfig.secret, {
+			expiresIn : 1m
+		})
 		
 		return res.redirect(`/Profile?name=${result.Name}`);
 		

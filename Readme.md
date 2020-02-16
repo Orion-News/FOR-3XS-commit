@@ -1,6 +1,6 @@
 #3XSolutions Demo Project;
 
-#Execu‡Æo ¡ndice;
+#Execucao indice;
 
 > npm i : para baixar as dependecias do package.json;
 
@@ -25,7 +25,7 @@
 > construir um web app, com framework React Or Vue;
 > tela login na '/' que ‚ renderizada a home page;
 > usuario deve ser autenticado para prosseguir nas rotas;
-> rota Profile, usa a autentica‡Æo feita na home page, usuario
+> rota Profile, usa a autenticacao feita na home page, usuario
 logado pode fazer uma listagem de email, essa listagem ‚ privada;
 
 >API feita em node.js no formato rest, utiliza padrÆo JWT;
@@ -36,6 +36,7 @@ logado pode fazer uma listagem de email, essa listagem ‚ privada;
 
 #Ocorrencias, Enprevistos;
 
-#devido a falta de equipamento adequado nÆo foi possivel utilizar React ou Vue... 
-#o padrÆo de arquitetura esta criada em FULL MVC, quando a Views fica no back-end...
-#views estÆo sendo renderizadas por Nunjucks engine template do node, para suporte do express em HTML e CSS;
+>devido a falta de equipamento adequado nao foi possivel utilizar React ou Vue... 
+>o padrao de arquitetura esta criada em FULL MVC, quando a Views fica no back-end...
+>views estao sendo renderizadas por Nunjucks engine template do node, para suporte do express em HTML e CSS;
+>feito em um W7, 2g RAM, 320HD, Intel dual-core;
