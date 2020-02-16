@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	{% include "_partials/head.njk" %}
+
+<body>
+	<div class="container">
+	
+		<div class="header-nav">
+			<header>
+				<nav>
+					<div class="form-button">					
+						<form action="/seeders" method="post">
+							<button type="submit"> Seeders </button>
+						</form>					
+					</div>
+				</nav>
+			</header>
+			
+			<h1> 3XSolutions </h1>
+		</div>
+		
+		{% block body %} {% endblock %}
+		
+		<div class="animation-area">
+			<ul class="box-area">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		
+	</div>	
+</body>
+</html>

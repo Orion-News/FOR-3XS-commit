@@ -1,0 +1,18 @@
+{% extends "_layouts/auth.njk" %}
+	
+	{% block body %}	
+	
+		<div class="form-searchEmail">
+		<form action="/Search" method="post" >
+			<input type="email" name="Email" placeholder="Procure por Email">
+			<button type="submit" > Search </button>
+		</form>
+		</div>
+		
+		<form action="/" method="get">
+			<button type submit="submit" class="cicle"> < </button>
+		</form>
+		
+		<p>Ola! tudo bem ?<br>	Gostariamos de lhe dar as Boas Vindas! <span> {{ name }} </span> </p> 
+		
+	{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "_layouts/auth.njk" %}
+
+	{% block body %}
+	
+	<div class="form-login">
+	<form action="/login" method="post">	
+	
+	<input type="email" name="Email" placeholder="Seu E-mail"/>
+	<input type="password" name="Password" placeholder="Sua Senha"/>
+	
+	<button type="submit"> Logar </button>
+	
+	</form>
+	</div>
+	{% endblock %}

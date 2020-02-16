@@ -1,0 +1,217 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* form login, rota home  */
+.form-login{
+	position: absolute;
+	left: 30px;
+	top: 5px;		
+	height: 50px;	
+	animation: animated 2s linear;
+	transition: 1s;
+} 
+/* + */
+::-webkit-input-placeholder{
+	font-size: 16px;
+	color: #FFF
+}
+
+.form-login input {
+	font-size: 16px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-color: #CCC;
+	margin: 2px;
+	padding: 8px 8px;
+	width: 220px;
+	background: transparent;
+	outline: 0;
+	color: #FFF;
+}
+/* + */
+.form-login button {	
+
+	top: 7px;
+	border-radius: 20px;
+	/* margin: 4px; */
+	width: 100px;
+	height: 36px;	
+	background: transparent;
+	color: #8942a8;
+	border: 2px solid #8942a8;
+	font-size: 1.0em;
+	cursor: pointer;
+	transition: 1s;
+	outline: 0;
+}
+/* + */
+.form-login button:hover{
+	border: none;
+	color: #FFF;
+	background: #8942a8;
+	opacity: 0.6;
+	font-size: 1.0em;
+	cursor: pointer;
+}
+/* rota Error nav bar button */
+
+.over{
+	list-style: none;
+}
+form .over{
+position: absolute;
+	right: 114px;
+	color: #fff;
+	height: 50px;
+	line-height: 50px;
+	display: block;
+	padding: 0px 20px;
+	cursor: pointer;
+	font-size: 20px;
+	border: none;
+	background: transparent;
+	transition: 1.0s;
+	outline: 0;
+}
+
+form .over:hover{
+	transition: 1.0s;
+	cursor: pointer;	
+	border: none;
+	background: #99ccff;
+}
+
+/* texto tanto para profile, quanto para error */
+p{
+	position: absolute;
+	color: #FFF;
+	top: 150px;
+	left: 260px;
+	font-size: 2em;
+	
+	animation: text 2s linear;
+}
+span {
+	color: #FFFF00;
+	font-size: 1.6em;
+	animation: name 15s linear;
+}
+/* form cicle rota profile */
+form .cicle{
+	position: absolute;
+	cursor: pointer;
+	top: 6px;
+	left: 10px;
+	border-radius: 20px;
+	width: 40px;
+	height: 40px;
+	border: none;
+	background: transparent;
+	font-size: 1.3em;
+	border: 2px solid #8942a8;
+	color: #8942a8;
+	outline: 0;
+}
+form .cicle:hover{	
+	color: #FFF;
+	background: #8942a8;
+	cursor: pointer;
+	transition: 1.0s;
+}
+
+/* form email search profile route */
+
+.form-searchEmail form {
+	position: absolute;
+	left:490px;
+	top: 5px;	
+	animation: animated 2s linear;	
+	transition: 1s;
+}
+.form-searchEmail input{
+	font-size: 16px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	margin: 2px;
+	border-color: #CCC;
+	padding: 8px 8px;
+	width: 220px;
+	background: transparent;
+	outline: 0;
+	color: #FFF;
+}
+
+.form-searchEmail button {
+	position: absolute;
+	cursor: pointer;
+	border-radius: 20px;
+	width: 80px;
+	height: 40px;
+	border: none;
+	background: transparent;
+	font-size: 1.1em;
+	border: 2px solid #8942a8;
+	color: #8942a8;
+	outline: 0;
+}
+
+.form-searchEmail button:hover{
+	color: #FFF;
+	background: #8942a8;
+	cursor: pointer;
+	transition: 1.0s;
+}
+
+@keyframes animated{
+	0%{
+		transform: translateX(0) ;
+		opacity: 0;
+	}
+	25%{
+		opacity: 0.25		
+	}
+	50%{
+		opacity: 0.50;
+	}
+	100%{
+		transform: translateX(0) ;
+		opacity: 1;
+	}
+}
+
+@keyframes name{
+	0%{
+		transform: translateY(0);
+		opacity: 0;
+	}
+	
+	50%{
+		transform: translateY(-800px);
+		opacity: 0.5;
+	}
+	100%{
+		transforms: transleteY(150px);
+		opacity: 1;
+	}
+}
+
+@keyframes text{
+	0%{
+		transform: translateX(-100px);
+		opacity: 0;
+	}
+	
+	50%{
+		transform: translateX(-50px);
+		opacity: 0.5;
+	}
+	100%{
+		transforms: transleteX(-75px);
+		opacity: 1;
+	}
+}

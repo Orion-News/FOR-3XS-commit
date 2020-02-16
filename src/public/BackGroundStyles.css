@@ -1,0 +1,156 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+	font-family: tahoma;
+	
+	background: linear-gradient(to right, #0099FF,  #8942a8);
+}
+/* Header-nav barra horizontal estendinda para todos layouts */
+.header-nav{
+	width: 100%;
+	position: absolute;
+	background: rgba(255, 255, 255, 0.1);
+}
+/* butões para seeders, e busca todos */ 
+.header-nav  button{
+	height: 50px;
+	float: right;
+	display: flex
+}
+/* + */
+.header-nav button{
+	list-style: none;
+}
+/* + */
+.header-nav button{
+	color: #fff;
+	height: 50px;
+	line-height: 50px;
+	display: block;
+	padding: 0px 20px;
+	font-size: 20px;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	transition: 1.0s;
+}
+
+.header-nav button:hover{	
+	transition: 1.0s;
+	cursor: pointer;	
+	border: none;
+	background: #99ccff;
+}
+
+/* Texto centro, home page h1 */
+.header-nav h1 {
+	position: absolute;
+	top: 40vh;
+	left: 20%;
+	font-size: 8em;
+	opacity: 30%;
+	color: transparent;
+	border-bottom: 2px;
+	-webkit-text-stroke: 2px #FFF;
+}
+
+
+
+/* area animation, valores decorentes as li do container 3/3 */
+.animation-area{
+	background: linear-gradient(to right, #0099FF,  #8942a8);
+	width: 100%;
+	height: 100vh;
+}
+/* area referente ao tamanho da tela que contera a "animation" */
+.box-area{
+	position: absolute;
+	top: 50px;
+	left:0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+/* tamanho, cor, local de deslocamento, animation content */
+.box-area li{
+	position: absolute;
+	display: block;
+	list-style: none;
+	width: 25px;
+	height: 25px;
+	background: rgba(255, 255, 255, 0.2);
+	animation: animate 20s linear infinite;
+	
+	bottom: +700px;
+	border-radius: 25px;
+}
+
+.box-area li:nth-child(1){
+	left: 86%;
+	width: 80px;
+	height: 80px;
+	animation-delay: 0s;
+	animation-duration: 3px
+}
+
+.box-area li:nth-child(2){
+	left: 40%;
+	width: 50px;
+	height: 100px;
+	animation-delay: 2s;
+	animation-duration: 7s;
+}
+
+.box-area li:nth-child(3){
+	left: 70%;
+	width: 100px;
+	height: 100px;
+	animation-delay: 5s;
+}
+.box-area li:nth-child(4){
+	left: 70%;
+	width: 150px;
+	height: 150px;
+	animation-delay: 4s;
+	animation-duration: 10s;
+}
+.box-area li:nth-child(5){
+	left: 65%;
+	width: 40px;
+	height: 80px;
+	animation-delay: 9s;
+}
+.box-area li:nth-child(6){
+	left: 15%;
+	width: 110px;
+	height: 110px;
+	animation-delay: 3.5s;
+	animation-duration: 6s;
+}
+@keyframes animate{
+	0%{
+		transform: translateY(0) rotate(0deg);
+		opacity: 1;
+	}
+	25%{
+		transform: translateY(250px) rotate(90deg);
+		opacity: 0.75;
+	}
+	50%{
+		transform: translateY(500px) rotate(180deg);
+		opacity: 0.5;
+	}
+	70%{
+		transform: translateY(750px) rotate(270deg);
+		opacity: 0.25;
+	}
+	100%{
+		transform: translateY(1000px) trotate(360deg);
+		opacity: 0;
+	}
+	
+}
