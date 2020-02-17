@@ -9,10 +9,6 @@ class UserControllerSearch {
 	try{
 	const { Email } = req.body;
 	
-	// variaveis referentes ao modulo paginate, filtrar usuarios por pagina
-	// const { page = 1} = req.query;	
-	// const ReturnUsers = await Users.paginate({}, {page, limit: 3});
-	
 	const result = await Users.findOne({Email});
 	
 	return res.redirect(`/Users?email=${result.Email}`);
