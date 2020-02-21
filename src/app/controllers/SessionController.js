@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 require('../models/userCreateSchema');
 const Users = mongoose.model('Users');
 const bcrypt = require('bcrypt');
-const jwt = require('jsonwebtoken');
+//const jwt = require('jsonwebtoken');
 
 const AuthConfig = require('../config/auth');
 
