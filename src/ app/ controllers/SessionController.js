@@ -21,7 +21,7 @@ class SessionController {
 		}
 		
 		if(!await bcrypt.compare(Password, result.Password)){
-			throw Error('Berrou na Senha');
+			throw Error('Senha incorreta');
 			return res.status(400).redirect(`/Error/?erro=${Error}`);
 		}
 		
