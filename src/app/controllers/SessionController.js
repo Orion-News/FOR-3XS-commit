@@ -15,7 +15,7 @@ class SessionController {
 		
 		const result = await Users.findOne({ Email }).select('+Password');
 		
-		if(!result.Email){
+		if( !result || !result.Email ){
 			throw Error('Email sem cadastro');
 			return res.status(400).redirect(`/Error/?erro=${Error}`);
 		}
@@ -25,9 +25,11 @@ class SessionController {
 			return res.status(400).redirect(`/Error/?erro=${Error}`);
 		}
 		
-		const token = jwt.sign({ id : result._id}, AuthConfig.secret, {
+		/* Recurso não implementado 
+                 const token = jwt.sign({ id : result._id}, AuthConfig.secret, {
 			expiresIn : 1m
 		})
+                */
 		
 		return res.redirect(`/Profile?name=${result.Name}`);
 		
